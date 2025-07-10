@@ -1,109 +1,43 @@
-body.crt-bg {
-  background: radial-gradient(circle, #0a0014 0%, #000 100%);
-  color: #00ffd5;
-  font-family: 'Share Tech Mono', monospace;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  position: relative;
-}
 
-.overlay-scanlines::before {
-  content: '';
-  position: fixed;
-  top: 0; left: 0;
-  width: 100vw; height: 100vh;
-  background: repeating-linear-gradient(
-    to bottom,
-    rgba(255,255,255,0.02),
-    rgba(255,255,255,0.02) 1px,
-    transparent 1px,
-    transparent 3px
-  );
-  z-index: 1;
-  pointer-events: none;
-}
-
-.main-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-  position: relative;
-  z-index: 2;
-  background: rgba(0, 0, 0, 0.6);
-  border: 1px solid #00ffd5;
-  box-shadow: 0 0 20px #00ffd5;
-}
-
-header {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.title-glow {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 2.5rem;
-  color: #ff00ff;
-  text-shadow: 0 0 5px #ff00ff, 0 0 10px #00fff7;
-}
-
-.subtitle {
-  font-size: 0.9rem;
-  color: #00fff7;
-  margin-top: -10px;
-}
-
-h2 {
-  color: #00fff7;
-  border-left: 4px solid #ff00ff;
-  padding-left: 1ch;
-  margin-top: 2rem;
-}
-
-ul {
-  list-style: square;
-  padding-left: 2ch;
-}
-
-a {
-  color: #ff00ff;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #00fff7;
-}
-
-footer {
-  text-align: center;
-  font-size: 0.75rem;
-  margin-top: 3rem;
-  opacity: 0.6;
-}
-
-.typewriter {
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 2px solid #00ffd5;
-  width: 0;
-  animation: typing 2.5s steps(40, end) forwards;
-}
-
-.typewriter.delay1 { animation-delay: 1.5s; }
-.typewriter.delay2 { animation-delay: 3s; }
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-.crt-image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 2rem auto;
-  border: 2px solid #00ffd5;
-  image-rendering: pixelated;
-  background-color: black;
-  filter: grayscale(20%) contrast(110%) brightness(95%);
-
-}
+    body {
+      font-family: 'Share Tech Mono', monospace;
+      background: radial-gradient(circle, #0a0014 0%, #000 100%);
+      color: #00ffd5;
+    }
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    .navbar-brand, .nav-link {
+      color: #00ffd5 !important;
+    }
+    .navbar-brand:hover, .nav-link:hover {
+      color: #ff00ff !important;
+    }
+    .carousel-inner img {
+      object-fit: cover;
+      height: 400px;
+    }
+    h2 {
+      color: #00fff7;
+      border-left: 4px solid #ff00ff;
+      padding-left: 1ch;
+      margin-top: 2rem;
+    }
+    .project-card img {
+      border: 1px solid #00ffd5;
+    }
+    .resume-btn {
+      color: #00ffd5;
+      border: 1px solid #00ffd5;
+      background: none;
+    }
+    .resume-btn:hover {
+      background: #00ffd5;
+      color: #000;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 0.85rem;
+      opacity: 0.6;
+    }
